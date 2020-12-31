@@ -1,0 +1,234 @@
+/* Navigation Bar
+----------------------*/
+
+.topnav {
+    
+  background-color: rgb(111, 199, 177);
+  /*float: right;*/
+
+}
+
+.topnav a {
+    float: right;
+    text-align: center;
+    padding: 10px 10px;
+    
+}
+
+.topnav a:hover {
+    background-color: rgb(12, 12, 8)
+}
+/* Global Style 
+----------------------*/
+html {
+    box-sizing: border-box;
+}
+*:before, *:after {
+    box-sizing: inherit;
+}
+body { 
+    color: #0a0e0a;
+    margin: 0;
+    padding: 0;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    line-height: 1.2;
+    
+}
+h3 {
+    color: white;
+}
+a {
+    color: pink;
+}
+
+a {
+    color:rgb(235, 237, 100);
+}
+h1 {
+
+    font-size: 80px;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    line-height: 1;
+}
+a:hover {
+    text-decoration: none;
+}
+.Header-wrap {
+    max-width: 900px;
+    width: 85%;
+    margin: 0 auto;
+    padding: 60px 0;
+}
+h2  {
+    color:rgb(226, 226, 219);
+    font-size: 45px;
+    margin-top: 1.5%;
+}
+h1 h2 {
+    font-family: 'Caveat', cursive;
+    font-weight: 400;
+    margin: 0;
+}
+header {
+    background-color: #1f5374;
+    color: white;
+}
+.items-details h3 + p {
+    font-style: italic;
+}
+.items-details h3 ~ p {
+    margin: 0;
+}
+h3 {
+    margin-bottom: 0%;
+}
+.divider-global > section {
+    border-bottom: 1px dashed #0f2c3d;
+    padding: 25px 0;
+}
+.divider-global > section:last-of-type{
+    border-bottom: none;
+}
+/*  Profile
+----------------------*/
+
+header {
+    background-color: #1f5374;
+    color: white;
+    /*text-align: center;*/
+}
+header h2 {
+    color: white;
+}
+
+  
+  /*  Feature Project
+----------------------*/
+
+.Projects {
+    background-color: #253e74;
+
+    
+}
+.Projects a {
+    color: darkgray;
+    background-color: rgb(43, 70, 226);
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 4px;
+    display: inline-block;
+}
+.Projects a:hover {
+    background-color: rgb(243, 240, 198);
+}
+.Projects-Float{
+    overflow: hidden;
+    border-bottom: 1px dashed #0f2c3d;
+    padding: 20px 0;
+
+}
+
+.Projects-Float h3 {
+    margin-top: 0;
+}
+
+.Projects-Item {
+    overflow: hidden;
+}
+/*.Projects-Float img {
+    float: left;
+    margin: 15px;
+}*/
+/*  Work Experince 
+----------------------*/
+.WorkExperince{
+    background-color: #6fa2d8;
+}
+.job-item {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 10px;
+}
+
+/*  Education
+----------------------*/
+.Education-image {
+    background-image: url(https://business.vcu.edu/media/business/images/intro-images/Snead%20Atrium%20Stock%20Ticker.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.9;
+    
+
+}
+.Education {
+    background-color: #21628a;
+    font-weight: bolder;
+}
+
+
+
+.Education h3 {
+    color:rgb(12, 12, 8);
+}
+
+
+.Education p {
+    width: 60%;
+    font-family: Georgia, 'Times New Roman', Times, serif ;
+    color: rgb(245, 229, 3);
+    font-weight: bolder;
+    
+}
+.Education li {
+    font-weight: bold;
+    color:  rgb(245, 229, 3);
+}
+
+
+
+
+/*  Social Media
+----------------------*/
+.SocialMedia{
+    background-color: #0f2c3d;
+    /*text-align: center;*/
+    
+}
+.contact-list {
+    list-style-type: none;
+    padding: 0;
+   
+}
+.contact-list a {
+    padding: 15px;
+    display:inline-block;
+}
+/*  Responsive Style
+----------------------*/
+@media screen and (min-width:900px) {
+    header, footer {
+        text-align: center;
+    }
+    .Projects-Float img {
+        float: left;
+        margin: 15px;
+    }
+    .contact-list{
+        display: flex;
+        justify-content: center;
+    }
+}
+@media screen and (max-width:899px) {
+    h1 {
+        font-size: 75px;
+        line-height: 0.9;
+    }
+    h2 {
+        line-height: 1;
+    }
+    .contact-list a {
+        padding: 5px;
+    }
+}
